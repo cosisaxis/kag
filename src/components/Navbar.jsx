@@ -8,8 +8,7 @@ export default function Navbar() {
       <Nav>
         <div className="brand">
           <div className="container">
-            <img src={logo} alt="" width="140px"  />
-            
+            <img src={logo} alt="" width="140px" />
           </div>
           <div className="toggle"></div>
         </div>
@@ -27,37 +26,44 @@ export default function Navbar() {
             <a href="#testimonials">Testimonials</a>
           </li>
         </ul>
-        <button onclick="window.open('tel:900300400');">call</button>
+        <a className="btn" href="tel:+8763019218">
+          <button>call</button>
+        </a>
       </Nav>
     </>
   );
 }
 
 const Nav = styled.nav`
-display: flex;
-justify-content: space-between;
-align-items: center;
-.brand{
-  .container{
-  }
-  .toggle{
-    display: none;
-  }
-}
-ul{
   display: flex;
-  gap: 1rem;
-  list-style-type: none;
-  li{
-    a{
-      text-decoration: none;
-      color: #1363DF;
-      font-size: 1.2rem;
-      transition: 0ms.1s ease-in-out;
-      &:hover{
-        color: #06283D;
+  justify-content: space-between;
+  align-items: center;
+  .brand {
+    .container {
+    }
+    .toggle {
+      display: none;
+    }
+  }
+  ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    li {
+      a {
+        text-decoration: none;
+        color: #1363df;
+        font-size: 1.2rem;
+        transition: 0ms.1s ease-in-out;
+        &:hover {
+          color: #06283d;
+        }
       }
     }
   }
-}
+  a {
+    button {
+      background-color: red;
+    }
+  }
 `;
