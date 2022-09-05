@@ -63,7 +63,16 @@ const Nav = styled.nav`
   }
   a {
     button {
-      background-color: red;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border: none;
+      color: white;
+      font-size: 1.1rem;
+      background-color: #06283D;
+      transition: 0.3s ease-in-out;
+      &:hover{
+        background-color: #1363DF;
+      }
     }
   }
 `;
