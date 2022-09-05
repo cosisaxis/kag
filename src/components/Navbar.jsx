@@ -75,4 +75,22 @@ const Nav = styled.nav`
       }
     }
   }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .brand {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .toggle {
+        display: block;
+      }
+    }
+    ul {
+      display: none;
+    }
+    button {
+      display: none;
+    }
+  }
 `;
